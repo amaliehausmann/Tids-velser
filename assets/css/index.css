@@ -1,0 +1,70 @@
+/* form */
+
+@keyframes shake-horizontal {
+    0%,
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px);
+    }
+    80% {
+      -webkit-transform: translateX(8px);
+              transform: translateX(8px);
+    }
+    90% {
+      -webkit-transform: translateX(-8px);
+              transform: translateX(-8px);
+    }
+  }
+
+#myForm{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin: auto;
+    padding: 5vw;
+    background-color: #fc7aa594;
+    border: solid 4px rgb(228, 81, 106);
+    border-radius: 20px;
+}
+
+#myForm h2{
+    text-align: center;
+    color: rgb(235, 36, 69);
+    font-family: sans-serif;
+}
+
+.invalid{
+    border: 2px solid red;       
+    animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+.valid{
+    border: 2px solid rgb(12, 178, 12);
+}
+
+input{
+    margin: 0.5vw;
+    border-radius: 8px;
+}
+
+button{
+    border-radius: 8px;
+    width: 25vw;
+    margin: auto;
+    background-color: transparent;
+    border: solid 2px rgb(228, 81, 106);
+    color: rgb(199, 12, 90);
+}
