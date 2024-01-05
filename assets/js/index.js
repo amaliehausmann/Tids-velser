@@ -1,3 +1,27 @@
+// cookies
+const myCookieContainer = document.getElementById('cookie-container');
+const myCookiePolicy = document.getElementById('cookiePolicy');
+const myBody = document.getElementById('body');
+const myCookieAll = document.getElementById('cookieAll');
+const myCookieChosen = document.getElementById('cookiechosen');
+
+window.addEventListener('DOMContentLoaded', ()=>{
+    myCookieContainer.style.display = 'block';
+    myBody.classList.add('noShow');
+});
+
+myCookieAll.addEventListener('click', (e)=>{
+    e.preventDefault();
+    myCookieContainer.style.display = 'none';
+    myBody.classList.remove('noShow');
+    });
+    
+   myCookieChosen.addEventListener('click', (e)=>{
+    e.preventDefault();
+    myCookieContainer.style.display = 'none';
+    myBody.classList.remove('noShow');
+    });
+
 // form validering
 const myForm = document.getElementById('myForm');
 

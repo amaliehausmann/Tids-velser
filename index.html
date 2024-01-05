@@ -7,7 +7,20 @@
     <link rel="stylesheet" href="assets/css/index.css">
     <script src="assets/js/index.js" defer></script>
 </head>
-<body>
+<body id="body">
+    <section id="cookie-container">
+        <section id="cookiePolicy">
+            <h3>Vi anvender cookies</h3>
+            <p>Ved at anvende denne side, accepterer du vores cookiepolicy</p>
+            <label><input type="checkbox">funktion</label>
+            <label><input type="checkbox">statistik</label>
+            <label><input type="checkbox">promotion</label>
+            <div class="buttonDisplay">
+                <button id="cookieAll">alle</button>
+                <button id="cookiechosen">valgte</button>
+            </div>
+        </section>
+    </section>
     <form id="myForm">
         <h2>Tilmelding</h2>
         <input type="text" id="firstName" placeholder="Fornavn">
